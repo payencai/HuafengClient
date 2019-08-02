@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:padding="10dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:id="@+id/ll_left"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/rl_del"
+                android:background="@mipmap/ic_del"
+                android:layout_width="15dp"
+                android:layout_height="15dp">
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_marginLeft="10dp"
+                android:text="袖口"
+                android:textSize="15sp"
+                android:textColor="@color/color_333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <EditText
+            android:textColor="@color/color_999"
+            android:inputType="phone"
+            android:textColorHint="#ccc"
+            android:layout_marginLeft="20dp"
+            android:gravity="end|center_vertical"
+            android:layout_toRightOf="@id/ll_left"
+            android:id="@+id/et_input"
+            android:layout_alignParentRight="true"
+            android:textSize="14sp"
+            android:background="@color/white"
+            android:hint="请输入"
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+    </RelativeLayout>
+    <View
+
+        android:background="#f3f3f3"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"></View>
+</LinearLayout>

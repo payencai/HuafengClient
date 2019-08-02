@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="2dp"
+    android:background="@drawable/bg_white_login"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+    <com.huafeng.client.view.CircleImageView
+        android:id="@+id/iv_head"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_beauty"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:layout_toLeftOf="@id/tv_agree"
+        android:layout_toRightOf="@+id/iv_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/color_333"
+                android:textSize="16sp"
+                android:text="李白"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="#999999"
+                android:textSize="12sp"
+                android:text="12:30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_toLeftOf="@id/tv_count"
+                android:layout_centerVertical="true"
+                android:textColor="#999999"
+                android:textSize="14sp"
+                android:text="来拿一下纸样"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_count"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                 android:background="@drawable/bg_circle"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:text="5"
+                android:layout_width="15dp"
+                android:layout_height="15dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

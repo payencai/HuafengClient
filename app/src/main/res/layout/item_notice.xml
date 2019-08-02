@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+
+        android:orientation="vertical"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:padding="10dp"
+            android:background="#f3f3f3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_time"
+                android:textColor="@color/color_999"
+                android:layout_centerInParent="true"
+                android:text="2019-06-05 12:32"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:visibility="gone"
+                android:id="@+id/redDot"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/bg_circle"
+                android:layout_width="8dp"
+                android:layout_height="8dp"></View>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:background="#f3f3f3"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/ic_notify" />
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+
+                    android:id="@+id/tv_name"
+                    android:textSize="14sp"
+                    android:textColor="@color/color_333"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="5dp"
+                    android:text="生产单201801001已完成洗水" />
+                <include
+                    android:visibility="gone"
+                    android:id="@+id/view1"
+                    layout="@layout/item_design_list"/>
+                <include
+                    android:visibility="gone"
+                    android:id="@+id/view2"
+                    layout="@layout/item_new_produce"/>
+                <include
+                    android:visibility="gone"
+                    android:id="@+id/view3"
+                    layout="@layout/item_approval_apply"/>
+                <include
+                    android:visibility="gone"
+                    android:id="@+id/view4"
+                    layout="@layout/item_home_order"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

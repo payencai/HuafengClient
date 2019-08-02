@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+
+    android:background="@drawable/bg_white_login"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:textSize="14sp"
+            android:textColor="@color/color_333"
+            android:layout_centerInParent="true"
+            android:text="新增制版号标头"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/iv_del"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@mipmap/ic_del"
+            android:layout_alignParentRight="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/et_content"
+        android:textColor="@color/color_333"
+        android:textSize="13sp"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:gravity="left"
+        android:hint="请输入..."
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/bg_shape_grey"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+    <View
+        android:layout_marginTop="40dp"
+        android:background="@color/color_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"></View>
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textColor="@color/color_333"
+        android:text="确定"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+</LinearLayout>

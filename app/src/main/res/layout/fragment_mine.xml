@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f3f3"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.start.fragment.MineFragment">
+
+    <View
+        android:background="#f3f3f3"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"></View>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlClassicsSpinnerStyle="FixedBehind"
+            app:srlPrimaryColor="#444"
+            app:srlAccentColor="@android:color/white"/>
+        <LinearLayout
+
+            android:background="#f9f9f9"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/ll_top"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/bg_white_login"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.huafeng.client.view.CircleImageView
+                    android:scaleType="fitXY"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/iv_head"
+
+                    android:layout_width="65dp"
+                    android:layout_height="65dp" />
+                <LinearLayout
+
+                    android:layout_toLeftOf="@id/iv_qrcode"
+                    android:layout_toRightOf="@id/iv_head"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_nick"
+                        android:textColor="@color/color_333"
+                        android:textSize="18sp"
+                        android:text=""
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/tv_number"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/color_333"
+                        android:textSize="13sp"
+                        android:text=""
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/tv_type"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/color_333"
+                        android:textSize="13sp"
+                        android:text=""
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <ImageView
+
+                    android:id="@+id/iv_qrcode"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentRight="true"
+
+                    android:layout_width="75dp"
+                    android:layout_height="70dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_safe"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/bg_white_login"
+                android:layout_marginTop="3dp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <LinearLayout
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@mipmap/ic_safe"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/color_333"
+                        android:textSize="16sp"
+                        android:text="账号安全"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <ImageView
+                    android:src="@mipmap/enter"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/rl_complain"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/bg_white_login"
+                android:layout_marginTop="3dp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <LinearLayout
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@mipmap/ic_complain"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/color_333"
+                        android:textSize="16sp"
+                        android:text="厂内投诉"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <ImageView
+                    android:src="@mipmap/enter"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/bg_white_login"
+                android:layout_marginTop="2dp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <LinearLayout
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@mipmap/ic_use"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/color_333"
+                        android:textSize="16sp"
+                        android:text="使用说明"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <ImageView
+                    android:src="@mipmap/enter"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_about"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/bg_white_login"
+                android:layout_marginTop="3dp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <LinearLayout
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@mipmap/ic_about"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/color_333"
+                        android:textSize="16sp"
+                        android:text="关于我们"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <ImageView
+                    android:src="@mipmap/enter"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp" />
+            </RelativeLayout>
+             <TextView
+                 android:layout_marginRight="20dp"
+                 android:layout_marginLeft="20dp"
+                 android:id="@+id/tv_exit"
+                 android:layout_marginTop="35dp"
+                 android:background="@color/white"
+                 android:padding="15dp"
+                 android:textColor="@color/color_333"
+                 android:gravity="center"
+                 android:text="退出登录"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+
+                android:id="@+id/tv_change"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:padding="15dp"
+                android:textColor="@color/color_333"
+                android:gravity="center"
+                android:text="切换账号"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+
+</LinearLayout>

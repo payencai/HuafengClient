@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:background="@drawable/bg_white_login"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_toLeftOf="@id/tv_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:visibility="gone"
+                    android:background="@drawable/bg_complain"
+                    android:textSize="12sp"
+                    android:padding="3dp"
+                    android:textColor="#3A56E8"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/tv_type1"
+                    android:text="人事审批"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:visibility="gone"
+                    android:background="@drawable/bg_yellow"
+                    android:textSize="12sp"
+                    android:padding="3dp"
+                    android:textColor="#F7A33C"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/tv_type2"
+                    android:text="财务审批"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/color_333"
+                    android:textSize="15sp"
+                    android:text="我想请两天假"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:layout_toRightOf="@id/iv_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_centerVertical="true"
+                android:textColor="#1CB979"
+                android:textSize="14sp"
+                android:text="已通过"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_circle"
+            android:layout_width="5dp"
+            android:layout_height="5dp"></View>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textSize="14sp"
+        android:textColor="@color/color_666"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="家里面有点事儿，我想请假回去一趟。一定帮我批下。非常感谢。"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_applvers"
+            android:textSize="15sp"
+            android:textColor="@color/color_333"
+            android:text="审批人：张三"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_alignParentRight="true"
+            android:textSize="15sp"
+            android:textColor="@color/color_333"
+            android:text="2019.01.10 12:00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

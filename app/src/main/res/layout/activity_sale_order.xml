@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:padding="15dp"
+            android:src="@mipmap/back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textSize="16sp"
+            android:text="销售订单"
+            android:layout_centerInParent="true"
+            android:textColor="#333333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/iv_add"
+            android:layout_toLeftOf="@id/iv_search"
+            android:padding="12dp"
+            android:src="@mipmap/ic_add"
+            android:layout_width="40dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_marginRight="5dp"
+            android:id="@+id/iv_search"
+            android:padding="12dp"
+            android:src="@mipmap/ic_search_new"
+            android:layout_alignParentRight="true"
+            android:layout_width="40dp"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="1dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.flyco.tablayout.SlidingTabLayout
+            android:id="@+id/tab_order"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/white"
+            app:tl_indicator_color="#FF4E7D"
+            app:tl_indicator_corner_radius="30dp"
+            app:tl_indicator_height="3dp"
+            app:tl_indicator_width="30dp"
+            app:tl_indicator_width_equal_title="false"
+            app:tl_tab_space_equal="true"
+            app:tl_textSelectColor="#2D5FE1"
+            app:tl_textUnselectColor="#666666"
+            app:tl_textsize="14sp" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_marginTop="1dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

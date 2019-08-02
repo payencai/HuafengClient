@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:textSize="14sp"
+            android:id="@+id/tv_item2"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/color_333"
+            android:text="M"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.huafeng.client.view.CursorEditText
+            android:id="@+id/et_name"
+            android:layout_toRightOf="@id/tv_item2"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:inputType="number"
+            android:gravity="end|center_vertical"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/color_333"
+            android:textColorHint="#ccc"
+            android:textSize="14sp"
+            android:background="@null"
+            android:hint="请输入"
+            android:layout_width="match_parent"
+            android:layout_height="35dp" />
+
+    </RelativeLayout>
+    <View
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#DFE1E6"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"></View>
+</LinearLayout>

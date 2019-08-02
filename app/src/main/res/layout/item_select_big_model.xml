@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_check"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_uncheck"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="外协"
+                android:textColor="@color/color_333"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="2019-09-25"
+                android:textColor="@color/color_333"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/tv_see"
+                android:background="@drawable/bg_btn_blue"
+                android:gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_width="48dp"
+                android:layout_height="22dp"
+                android:layout_centerVertical="true"
+                android:text="查看"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View
+        android:layout_marginTop="5dp"
+        android:background="@color/color_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp">
+
+    </View>
+</LinearLayout>

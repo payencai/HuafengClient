@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.huafeng.client">
+    <!-- 允许程序打开网络套接字 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 允许程序设置内置sd卡的写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 允许程序获取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 允许程序访问WiFi网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 允许程序读写手机状态和身份 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
+    <!-- AgentWeb 是默认允许定位的 ，fACCESS_LOCATION_EXTRA_COMMANDS如果你需要该功能 ， 请在你的 AndroidManifest 文件里面加入如下权限 。 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 环信权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="com.fingerprints.service.ACCESS_FINGERPRINT_MANAGER" />
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_ASSISTED_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION" /> <!-- 用于申请获取蓝牙信息进行室内定位 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.DEVICE_POWER" />
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_app_logo"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_app_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".ui.login.SearchOrderActivity"
+            android:label="@string/title_activity_search_order"></activity>
+        <activity android:name=".clientui.AddSupplierActivity" />
+        <activity android:name=".clientui.activity.NewSupplierActivity" />
+        <activity android:name=".clientui.activity.MySupplierActivity" />
+        <activity android:name=".clientui.activity.ClientStorageActivity" />
+        <activity android:name=".clientui.activity.ClientOrderActivity" />
+        <activity android:name=".clientui.activity.SelectClientSampleActivity" />
+        <activity
+            android:name=".clientui.activity.ClientCreateOrderActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".clientui.activity.ClientModelDetailActivity" />
+        <activity android:name=".clientui.activity.ClientModelDataActivity" />
+        <activity android:name=".ui.home.activity.origin.HalfCheckActivity" />
+        <activity android:name=".ui.start.activity.GuideActivity" />
+        <activity android:name=".ui.home.activity.produce.FinishEntryActivity" />
+        <activity android:name=".ui.home.activity.origin.CheckStorageActivity" />
+        <activity android:name=".ui.home.activity.search.SearchWaitorderActivity" />
+        <activity android:name=".ui.home.activity.design.SeeRawModuleActivity" />
+        <activity android:name=".ui.home.activity.design.SeeProcessModuleActivity" />
+        <activity android:name=".ui.home.activity.search.SearchHalfActivity" />
+        <activity android:name=".ui.home.activity.origin.HalfBackgoodsActivity" />
+        <activity android:name=".ui.home.activity.origin.HalfStorageDetailActivity" />
+
+        <service android:name="com.amap.api.location.APSService" /> <!-- android:alwaysRetainTaskState="true" -->
+        <!-- android:clearTaskOnLaunch="false" -->
+        <activity
+            android:name=".ui.start.activity.SplashActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.Launcher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.home.activity.design.SeeSizeModuleActivity" />
+        <activity android:name=".ui.home.activity.select.SelectStyleActivity" />
+        <activity android:name=".ui.contacts.activity.SearchGroupActivity" />
+        <activity android:name=".ui.mine.activity.SetHandPasswordActivity" />
+        <activity android:name=".ui.contacts.activity.StrangerDetailActivity" />
+        <activity android:name=".ui.start.activity.MyQrCodeActivity" />
+        <activity
+            android:name=".ui.home.activity.origin.UpdateOriginDataActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".ui.home.activity.origin.EntryOriginDataActivity" />
+        <activity android:name=".ui.home.activity.search.SearchApprovalCenterActivity" />
+        <activity android:name=".ui.home.activity.search.SearchMyApprovalActivity" />
+        <activity android:name=".ui.home.activity.search.SearchSampleActivity" />
+        <activity android:name=".ui.home.activity.search.SearchMaterialActivity" />
+        <activity android:name=".ui.home.activity.search.SearchFinishActivity" />
+        <activity android:name=".ui.home.activity.search.SearchOriginActivity" />
+        <activity android:name=".ui.home.activity.search.SearchAskActivity" />
+        <activity android:name=".ui.home.activity.search.SearchBuyActivity" />
+        <activity android:name=".ui.home.activity.search.SearchClientActivity" />
+        <activity android:name=".ui.home.activity.WebviewActivity" />
+        <activity android:name=".ui.home.activity.client.ClientManaAddressActivity" />
+        <activity android:name=".ui.home.activity.client.ClientManaPhoneActivity" />
+        <activity
+            android:name=".ui.home.activity.select.SelectMaterialActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.hyphenate.easeui.ui.video.ImageGridActivity" />
+        <activity android:name="com.hyphenate.easeui.ui.video.RecorderVideoActivity" />
+        <activity
+            android:name="com.hyphenate.easeui.ui.EaseBaiduMapActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" />
+        <activity
+            android:name="com.hyphenate.easeui.ui.EaseShowVideoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.hyphenate.easeui.ui.EaseShowBigImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" />
+        <activity
+            android:name="com.hyphenate.easeui.ui.EaseShowNormalFileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" />
+        <activity android:name=".ui.mine.activity.MyAccountActivity" />
+        <activity
+            android:name=".ui.message.activity.StrongNoticeActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".ui.home.activity.produce.NextFlowActivity" />
+        <activity android:name=".ui.home.activity.client.EditClientActivity" />
+        <activity android:name=".ui.home.activity.client.ClientDetailActivity" />
+        <activity android:name=".ui.home.activity.origin.UpdateOriginDetailActivity" />
+        <activity android:name=".ui.home.activity.select.SelectCategoryActivity" />
+        <activity
+            android:name=".ui.home.activity.origin.AddOriginDataActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".ui.home.activity.origin.SendGoodsDetailActivity" />
+        <activity android:name=".ui.home.activity.origin.RebackGoodsDetailActivity" />
+        <activity
+            android:name=".ui.home.activity.origin.SendGoodsActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.home.activity.origin.CancelGoodsActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".ui.home.activity.origin.OriginFinishDetailActivity" />
+        <activity android:name=".ui.home.activity.origin.OriginStorageDetailActivity" />
+        <activity
+            android:name=".ui.home.activity.buy.BuyDetailSubmitActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".ui.home.activity.buy.BuyOrderDetailActivity" />
+        <activity android:name=".ui.home.activity.buy.AskDetailActivity" />
+        <activity
+            android:name=".ui.home.activity.buy.CreateAskActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".ui.home.activity.buy.WaitBuyDetailActivity" />
+        <activity android:name=".ui.home.activity.sample.SeeProcessActivity" />
+        <activity android:name=".ui.home.activity.select.SelectBigModelActivity" />
+        <activity android:name=".ui.home.activity.select.SelectProcessActivity" />
+        <activity android:name=".ui.home.activity.select.SelectMoreSizeActivity" />
+        <activity android:name=".ui.home.activity.select.SelectSingleSizeActivity" />
+        <activity android:name=".ui.home.activity.select.SelectOrderClothesActivity" />
+        <activity android:name=".ui.home.activity.order.CreateOrderActivity" />
+        <activity android:name=".ui.home.activity.select.SelectSupplierActivity" />
+        <activity android:name=".ui.home.activity.select.SelectEmployeeActivity" />
+        <activity android:name=".ui.home.activity.produce.WorkAssignActivity" />
+        <activity android:name=".ui.home.activity.produce.CreateGetOrderActivity" />
+        <activity android:name=".ui.home.activity.produce.CreateSendOrderActivity" />
+        <activity android:name=".ui.home.activity.produce.SeeReceiverOrderActivity" />
+        <activity android:name=".ui.home.activity.produce.SeeSendOrderActivity" />
+        <activity android:name=".ui.home.activity.produce.SeeDataActivity" />
+        <activity android:name=".ui.home.activity.produce.ProduceDetailActivity" />
+        <activity android:name=".ui.home.activity.order.OrderDetailActivity" />
+        <activity android:name=".ui.home.activity.order.ConfirmOrderActivity" />
+        <activity android:name=".ui.home.activity.select.SelectModelSizeActivity" />
+        <activity android:name=".ui.home.activity.design.ModelDetailActivity" />
+        <activity android:name=".ui.home.activity.search.SearchDesignActivity" />
+        <activity android:name=".ui.start.activity.FingerActivity" />
+        <activity android:name=".ui.message.activity.GroupUserDeleteActivity" />
+        <activity android:name=".ui.message.activity.GroupInvateActivity" />
+        <activity android:name=".ui.message.activity.GroupDetailActivity" />
+        <activity android:name=".ui.message.activity.GroupChatActivity" />
+        <activity android:name=".ui.message.activity.CreateGroupActivity" />
+        <activity android:name=".ui.message.activity.GroupApplyActivity" />
+        <activity android:name=".ui.message.activity.MyGroupActivity" />
+        <activity android:name=".ui.message.activity.SingleChatActivity" />
+        <activity android:name=".ui.home.activity.select.SelectApproversActivity" />
+        <activity android:name=".ui.home.activity.select.SelectFactoryActivity" />
+        <activity
+            android:name=".ui.start.activity.ApplyFactoryActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".ui.home.activity.select.SelectDesignerActivity" />
+        <activity android:name=".ui.home.activity.select.SelectClientActivity" />
+        <activity android:name=".ui.home.activity.select.SelectNoprefixsActivity" />
+        <activity android:name=".ui.home.activity.select.SelectWashProcessActivity" />
+        <activity android:name=".ui.home.activity.select.SelectRawActivity" />
+        <activity android:name=".ui.home.activity.select.SelectSizeTypeActivity" />
+        <activity android:name=".ui.home.activity.select.SelectSizeActivity" />
+        <activity android:name=".ui.home.activity.select.SecStyleSelectActivity" />
+        <activity android:name=".ui.home.activity.select.FirstStyleSelectActivity" />
+        <activity android:name=".ui.message.activity.TestActivity" /> <!-- authorities不能相同，不然无法安装 -->
+        <provider
+            android:name=".tools.EaseFileProvider"
+            android:authorities="com.client.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_root_paths" />
+        </provider> <!-- 设置环信应用的AppKey -->
+        <provider
+            android:name=".tools.sidebar.MyFileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path" />
+        </provider> <!-- 设置环信应用的AppKey -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="qkvfvDGAQfofGjSsS5xI1wm329v1D5I1" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="1121190511097928#huafeng" /> <!-- 声明SDK所需的service SDK核心功能 -->
+        <service
+            android:name="com.hyphenate.chat.EMChatService"
+            android:exported="true" />
+        <service
+            android:name="com.hyphenate.chat.EMJobService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" /> <!-- 声明SDK所需的receiver -->
+        <receiver android:name="com.hyphenate.chat.EMMonitorReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <!-- 可选filter -->
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="7056d35ea0747c190b32bedaf0f5a1d0" />
+
+        <activity
+            android:name=".ui.start.activity.MainActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.start.activity.LoginActivity"
+            android:exported="true" />
+        <activity android:name=".ui.mine.activity.SafetyAccountActivity" />
+        <activity android:name=".ui.mine.activity.UserInfoActivity" />
+        <activity android:name=".ui.contacts.activity.ContactDetailActivity" />
+        <activity android:name=".ui.contacts.activity.NewFriendsActivity" />
+        <activity android:name=".ui.message.activity.NotifyCenterActivity" />
+        <activity android:name=".ui.home.activity.design.ModelDesignActivity" />
+        <activity android:name=".ui.home.activity.produce.ProduceManaActivity" />
+        <activity android:name=".ui.mine.activity.ComplainActivity" />
+        <activity android:name=".ui.mine.activity.BindPhoneActivity" />
+        <activity android:name=".ui.mine.activity.AboutUsActivity" />
+        <activity android:name=".ui.mine.activity.MyPhoneActivity" />
+        <activity android:name=".ui.start.activity.UpdatePaswordActivity" />
+        <activity android:name=".ui.start.activity.FindPasswordActivity" />
+        <activity android:name=".ui.start.activity.RegisterActivity" />
+        <activity android:name=".ui.home.activity.order.SaleOrderActivity" />
+        <activity android:name=".ui.contacts.activity.SearchStrangerActivity" />
+        <activity android:name=".ui.home.activity.design.DesignDetailActivity" />
+        <activity android:name=".ui.home.activity.OriginalDataActivity" />
+        <activity android:name=".ui.home.activity.origin.FinishedStorageActivity" />
+        <activity android:name=".ui.home.activity.ModelDataActivity" />
+        <activity android:name=".ui.home.activity.ClockInActivity" />
+        <activity android:name=".ui.home.activity.client.CustomManaActivity" />
+        <activity android:name=".ui.home.activity.origin.HalfStorageActivity" />
+        <activity android:name=".ui.home.activity.origin.OriginalStorageActivity" />
+        <activity android:name=".ui.home.activity.apply.ApprovalCenterActivity" />
+        <activity android:name=".ui.home.activity.apply.ApprovalApplyActivity" />
+        <activity android:name=".ui.home.activity.buy.BuyOrderActivity" />
+        <activity android:name=".ui.home.activity.buy.AskOrderActivity" />
+        <activity android:name=".ui.home.activity.buy.WaitBuyActivity" />
+        <activity android:name=".ui.home.activity.DataStatisticsActivity" />
+        <activity android:name=".ui.home.activity.client.AddCustomerActivity" />
+        <activity
+            android:name=".ui.home.activity.order.AddSaleOrderActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.home.activity.apply.AddAprovalActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".ui.home.activity.apply.ApprovalApplyDetailActivity" />
+        <activity android:name=".ui.home.activity.apply.ApprovalCenterDetailActivity" />
+        <activity
+            android:name=".ui.home.activity.design.AddModelDesignActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.home.activity.search.SearchSaleActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.home.activity.search.SearchProduceActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.home.activity.design.AddModelCardActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".ui.home.activity.ModelDataDetailActivity" />
+        <activity
+            android:name=".ui.home.activity.design.AddModelDataActivity"
+            android:windowSoftInputMode="stateHidden" />
+
+        <receiver
+            android:name=".JPush.JpushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" /> <!-- 开机广播 -->
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" /> <!-- 网络状态改变广播 -->
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /> <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.huafeng.client" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:process=":multiprocess"
+            tools:node="replace">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

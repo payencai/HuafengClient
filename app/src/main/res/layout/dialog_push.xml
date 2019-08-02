@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+
+    android:layout_margin="10dp"
+    android:background="@drawable/bg_white_login"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/color_333"
+        android:text="推送提示"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_title"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textColor="@color/color_666"
+        android:text="生产单的任务已经指派给你了"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_marginTop="30dp"
+        android:background="#f3f3f3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+
+    </View>
+    <LinearLayout
+
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tv_cancel"
+
+            android:textSize="16sp"
+            android:textColor="@color/color_blue"
+            android:text="我知道了"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <View
+            android:background="#f3f3f3"
+            android:layout_width="1dp"
+            android:layout_height="match_parent">
+
+        </View>
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tv_confirm"
+            android:layout_gravity="center_horizontal"
+            android:textSize="16sp"
+            android:textColor="@color/color_blue"
+            android:text="查看"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+</LinearLayout>

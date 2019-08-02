@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="50dp">
+       <TextView
+           android:ellipsize="end"
+           android:singleLine="true"
+           android:id="@+id/tv_name"
+           android:background="@drawable/bg_grey"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="2"
+           android:gravity="center"
+           android:text="布匹-231"
+           android:textColor="@color/color_666"
+           android:textSize="14sp" />
+
+
+
+       <TextView
+           android:id="@+id/tv_num"
+           android:background="@drawable/bg_grey"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="2"
+           android:gravity="center"
+           android:text="135845"
+           android:textColor="@color/color_666"
+           android:textSize="14sp" />
+       <RelativeLayout
+           android:background="@drawable/bg_grey"
+           android:layout_weight="3"
+           android:layout_width="0dp"
+           android:layout_height="match_parent">
+           <EditText
+               android:inputType="phone"
+               android:id="@+id/et_input"
+               android:gravity="center"
+               android:paddingLeft="10dp"
+               android:textSize="14sp"
+               android:textColorHint="#ccc"
+               android:hint="数量"
+               android:layout_margin="5dp"
+               android:background="@drawable/bg_grey"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent" />
+       </RelativeLayout>
+
+   </LinearLayout>
+
+
+
+
+
+</LinearLayout>

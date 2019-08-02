@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:background="@drawable/bg_white_login"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_size"
+        android:background="@color/white"
+        android:paddingLeft="15dp"
+        android:gravity="center_vertical"
+        android:text="尺码M"
+        android:textStyle="bold"
+        android:textColor="@color/color_333"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <View
+        android:background="#f3f3f3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+    <com.huafeng.client.view.MyGridView
+        android:numColumns="3"
+        android:id="@+id/gv_size"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.huafeng.client.view.MyGridView>
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mcxtzhang.swipemenulib.SwipeMenuLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="55dp">
+    <LinearLayout
+        android:id="@+id/ll_item"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="49.5dp">
+            <TextView
+                android:id="@+id/tv_name"
+                android:paddingLeft="30dp"
+                android:gravity="center_vertical"
+                android:textSize="14sp"
+                android:textColor="@color/color_333"
+                android:text="李白"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tv_current"
+                android:visibility="gone"
+                android:layout_marginRight="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="30dp"
+                android:gravity="center_vertical"
+                android:textSize="14sp"
+                android:textColor="@color/color_blue"
+                android:text="当前账号"
+                android:layout_width="wrap_content"
+                android:layout_height="49.5dp" />
+        </RelativeLayout>
+
+        <View
+            android:background="@color/color_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"></View>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:background="@color/color_red"
+        android:text="删除"
+        android:textColor="@android:color/white"/>
+</com.mcxtzhang.swipemenulib.SwipeMenuLayout>

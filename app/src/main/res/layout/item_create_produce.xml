@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:layout_margin="5dp"
+    android:background="@drawable/bg_white_login"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_locate"
+            android:textSize="20sp"
+            android:textColor="@color/color_333"
+            android:maxLength="8"
+            android:text="31床"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_month"
+            android:layout_marginTop="5dp"
+            android:textSize="10sp"
+            android:textColor="#888"
+            android:maxLength="8"
+            android:text="2018年12月"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:ellipsize="end"
+            android:id="@+id/tv_status"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:textSize="14sp"
+            android:textColor="@color/color_333"
+            android:text="洗水"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/iv_img"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="15dp"
+        android:src="@color/gray_normal"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+    <LinearLayout
+
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="14sp"
+            android:textColor="@color/color_333"
+            android:id="@+id/tv_sampleno"
+            android:text="0012#"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textSize="10sp"
+                android:textColor="@color/color_333"
+                android:id="@+id/tv_num"
+                android:text="生产数量：100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:textSize="10sp"
+                android:textColor="@color/color_333"
+                android:id="@+id/tv_real"
+                android:text="实际产出：98"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+
+                android:layout_marginTop="5dp"
+                android:textSize="10sp"
+                android:textColor="@color/color_333"
+                android:text="开始时间："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_start"
+                android:layout_marginTop="5dp"
+                android:textSize="10sp"
+                android:textColor="@color/color_333"
+                android:text="2019年1月20日"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_finishname"
+                android:layout_marginTop="5dp"
+                android:textSize="10sp"
+                android:textColor="@color/color_333"
+                android:text="完成时间："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_finish"
+                android:layout_marginTop="5dp"
+                android:textSize="10sp"
+                android:textColor="@color/color_333"
+                android:text="2019年1月20日"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

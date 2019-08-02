@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+    <RelativeLayout
+        android:background="@color/white"
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:visibility="gone"
+            android:padding="15dp"
+            android:src="@mipmap/back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv_title"
+            android:textSize="20sp"
+            android:text="华枫制衣"
+            android:layout_centerInParent="true"
+            android:textColor="#333333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:padding="15dp"
+            android:id="@+id/iv_code"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_qrcode"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_below="@id/rl_top"
+        android:layout_marginBottom="1dp"
+        android:background="@color/white"
+        android:id="@+id/fr_container"
+        android:layout_above="@id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_marginTop="1dp"
+        android:id="@+id/ll_bottom"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:id="@+id/ll_tab_home"
+            android:padding="2dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_tab_home"
+                android:layout_marginTop="3dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@mipmap/ic_select_home"
+                android:layout_gravity="center_horizontal"
+                />
+            <TextView
+                android:id="@+id/tv_tab_home"
+                android:textColor="@color/color_blue"
+                android:textSize="12sp"
+                android:layout_marginTop="2dp"
+                android:text="首页"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:id="@+id/ll_tab_msg"
+            android:padding="2dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_marginTop="3dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="32dp"
+                android:layout_height="24dp">
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:id="@+id/iv_tab_msg"
+
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@mipmap/ic_unselect_msg"
+                    />
+                <TextView
+                    android:id="@+id/tv_count"
+                    android:visibility="gone"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textSize="10dp"
+                    android:text="2"
+                    android:background="@drawable/bg_circle"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_tab_msg"
+                android:textSize="12sp"
+                android:layout_marginTop="2dp"
+                android:text="消息"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:id="@+id/ll_tab_contacts"
+            android:padding="2dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_tab_contacts"
+                android:layout_marginTop="3dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@mipmap/ic_unselect_contacts"
+                android:layout_gravity="center_horizontal"
+                />
+            <TextView
+                android:id="@+id/tv_tab_contacts"
+                android:textSize="12sp"
+                android:layout_marginTop="2dp"
+                android:text="通讯录"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:id="@+id/ll_tab_mine"
+            android:padding="2dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_tab_mine"
+                android:layout_marginTop="3dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@mipmap/ic_unselect_mine"
+                android:layout_gravity="center_horizontal"
+                />
+            <TextView
+                android:id="@+id/tv_tab_mine"
+                android:textSize="12sp"
+                android:layout_marginTop="2dp"
+                android:text="我的"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

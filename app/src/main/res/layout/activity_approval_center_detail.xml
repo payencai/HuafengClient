@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.activity.apply.ApprovalApplyDetailActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/back"
+            android:padding="15dp"
+            android:src="@mipmap/back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textSize="16sp"
+            android:text="申请详情"
+            android:layout_centerInParent="true"
+            android:textColor="#333333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:visibility="gone"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:text="撤销"
+            android:layout_alignParentRight="true"
+            android:textColor="#FF5B5B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:textSize="15sp"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+
+                android:textColor="@color/color_333"
+                android:text="审批类型"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginLeft="30dp"
+
+                android:layout_marginRight="10dp"
+                android:gravity="right|center_vertical"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_type"
+                    android:textStyle="bold"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:gravity="right|center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/color_333"
+                    android:textSize="15sp"
+                    android:text="人事审批"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+        <View
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#DFE1E6"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"></View>
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:textSize="15sp"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+
+                android:textColor="@color/color_333"
+                android:text="审批人"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginLeft="30dp"
+
+                android:layout_marginRight="10dp"
+                android:gravity="right|center_vertical"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:textStyle="bold"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:gravity="right|center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/color_333"
+                    android:textSize="15sp"
+                    android:text="李白"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+        <View
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#DFE1E6"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"></View>
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:textSize="15sp"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+
+                android:textColor="@color/color_333"
+                android:text="状态"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginLeft="30dp"
+
+                android:layout_marginRight="10dp"
+                android:gravity="right|center_vertical"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_status"
+                    android:textStyle="bold"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:gravity="right|center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/color_333"
+                    android:textSize="15sp"
+                    android:text="待审批"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+        <View
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#DFE1E6"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"></View>
+        <TextView
+            android:textSize="15sp"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/color_333"
+            android:text="申请内容"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/color_333"
+            android:text="回家"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_marginRight="20dp"
+            android:textSize="15sp"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/color_333"
+            android:text="我想请两天假，我想请两天假可以不可以给我批两天假我想回家"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.huafeng.client.view.GridViewForScrollView
+            android:id="@+id/gv_photo"
+            android:layout_margin="10dp"
+            android:numColumns="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.huafeng.client.view.GridViewForScrollView>
+
+        <RelativeLayout
+            android:id="@+id/rl_bottom"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/tv_refuse"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:text="拒绝"
+                    android:background="@drawable/bg_refuse"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/tv_agree"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:text="通过"
+                    android:background="@drawable/bg_green_login"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

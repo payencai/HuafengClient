@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string-array name="provinces">
+        <item>阿福</item>
+        <item>宝贝</item>
+        <item>裁剪</item>
+        <item>大哥</item>
+        <item>饿了</item>
+        <item>服了</item>
+        <item>光打</item>
+        <item>哈哈</item>
+        <item>林彪</item>
+        <item>方法</item>
+        <item>舅舅</item>
+        <item>康复</item>
+        <item>遮挡</item>
+        <item>外网</item>
+        <item>涨幅</item>
+        <item>呕吐</item>
+        <item>平滑</item>
+        <item>山寨</item>
+        <item>辽宁</item>
+        <item>内蒙古</item>
+        <item>宁夏</item>
+        <item>青海</item>
+        <item>山西</item>
+        <item>陕西</item>
+        <item>上海</item>
+        <item>新疆</item>
+        <item>西藏</item>
+        <item>云南</item>
+        <item>甘肃</item>
+        <item>贵州</item>
+        <item>广西</item>
+        <item>海南</item>
+
+        <item>A</item>
+        <item>a</item>
+        <item>b</item>
+        <item>d</item>
+
+        <item>.a</item>
+        <item>;b</item>
+        <item>#c</item>
+        <item>d</item>
+
+        <item>ab</item>
+        <item>aa</item>
+    </string-array>
+
+
+</resources>

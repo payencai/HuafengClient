@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+
+            android:id="@+id/rl_del"
+            android:background="@drawable/bg_circle"
+            android:layout_width="15dp"
+            android:layout_height="15dp">
+            <View
+                android:background="@color/white"
+                android:layout_centerInParent="true"
+                android:layout_width="8dp"
+                android:layout_height="2dp"></View>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/color_333"
+            android:textSize="16sp"
+            android:text="尺码S"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.huafeng.client.view.MyGridView
+        android:id="@+id/gv_child"
+        android:layout_marginTop="5dp"
+        android:numColumns="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.huafeng.client.view.MyGridView>
+</LinearLayout>

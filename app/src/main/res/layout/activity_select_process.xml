@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选择工序"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+        <TextView
+
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/tv_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="确定"
+            android:textColor="@color/color_blue"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.huafeng.client.view.MyListView
+                android:id="@+id/lv_process"
+                android:layout_marginTop="1dp"
+                android:divider="@color/white"
+                tools:listitem="@layout/item_select_process"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.huafeng.client.view.MyListView>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textColor="@color/color_blue"
+                android:textSize="15sp"
+                android:paddingLeft="10dp"
+                android:gravity="center"
+                android:text="已选择"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+            <com.huafeng.client.view.MyGridView
+                android:numColumns="3"
+                android:id="@+id/gv_select"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.huafeng.client.view.MyGridView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

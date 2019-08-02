@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+
+            android:id="@+id/tv_name"
+            android:background="@drawable/bg_grey"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/color_333"
+            android:textSize="13sp" />
+
+
+
+        <TextView
+
+            android:id="@+id/tv_num"
+            android:background="@drawable/bg_grey"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/color_333"
+            android:textSize="13sp" />
+
+        <RelativeLayout
+
+            android:gravity="center"
+            android:background="@drawable/bg_grey"
+            android:layout_width="120dp"
+            android:layout_height="match_parent" >
+
+            <EditText
+                android:id="@+id/et_cloth"
+                android:singleLine="true"
+                android:textColorHint="#ccc"
+                android:layout_centerInParent="true"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:hint="例子：3.2,2.1"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_grey"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:background="@drawable/bg_grey"
+            android:id="@+id/rl_shop"
+            android:layout_width="120dp"
+            android:layout_height="match_parent" >
+            <TextView
+                android:id="@+id/tv_shop"
+                android:layout_marginLeft="7dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:layout_centerVertical="true"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/iv_down"
+                android:text="供应商"
+                android:textColor="@color/color_333"
+                android:textSize="13sp" />
+            <ImageView
+                android:id="@+id/iv_down"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/ic_new_down"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="10dp"
+                android:layout_height="10dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:gravity="center"
+            android:background="@drawable/bg_grey"
+            android:layout_width="100dp"
+            android:layout_height="match_parent" >
+
+            <EditText
+                android:id="@+id/et_number"
+                android:maxLength="8"
+                android:singleLine="true"
+                android:inputType="phone"
+                android:textColorHint="#ccc"
+                android:layout_centerInParent="true"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:hint="数量"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_grey"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:gravity="center"
+            android:background="@drawable/bg_grey"
+            android:layout_width="100dp"
+            android:layout_height="match_parent" >
+
+            <EditText
+                android:id="@+id/et_price"
+                android:maxLength="8"
+                android:singleLine="true"
+                android:inputType="phone"
+                android:textColorHint="#ccc"
+                android:layout_centerInParent="true"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:hint="单价"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_grey"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_total"
+            android:background="@drawable/bg_grey"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="￥-"
+            android:textColor="@color/color_333"
+            android:textSize="13sp" />
+        <RelativeLayout
+            android:gravity="center"
+            android:background="@drawable/bg_grey"
+            android:layout_width="80dp"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/tv_delete"
+                android:visibility="gone"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp"
+                android:background="@color/color_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="删除"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_add"
+        android:background="@drawable/bg_grey"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:id="@+id/tv_add"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="添加供应商"
+            android:background="@drawable/bg_btn_green"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp" />
+    </LinearLayout>
+</LinearLayout>

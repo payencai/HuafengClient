@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="收货地址"
+        android:textColor="#333"
+        android:textSize="16sp" />
+
+    <EditText
+
+        android:paddingTop="10dp"
+        android:gravity="left"
+        android:textColorHint="@color/color_999"
+        android:textColor="@color/color_666"
+        android:paddingLeft="10dp"
+        android:maxLength="50"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/tv_name"
+        android:layout_marginLeft="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/et_value"
+        android:background="@drawable/bg_shape_grey"
+        android:hint="请输入地址"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/et_value"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:textSize="16sp"
+            android:textColor="@color/color_999"
+            android:gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:text="取消" />
+
+        <TextView
+            android:id="@+id/tv_submit"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@drawable/btn_corner_shape"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:text="确定" />
+    </RelativeLayout>
+</RelativeLayout>

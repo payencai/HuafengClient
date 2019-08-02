@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:padding="10dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:id="@+id/ll_left"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/rl_del"
+                android:background="@mipmap/ic_del"
+                android:layout_width="15dp"
+                android:layout_height="15dp">
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_marginLeft="10dp"
+                android:text="二级分类"
+                android:textSize="15sp"
+                android:textColor="@color/color_333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_marginLeft="10dp"
+                android:text="请选择具体材质"
+                android:textSize="15sp"
+                android:textColor="@color/color_999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/enter"
+                android:layout_width="10dp"
+                android:layout_height="10dp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:padding="10dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_centerVertical="true"
+
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+
+
+                android:layout_width="14dp"
+                android:layout_height="14dp">
+
+            </RelativeLayout>
+            <TextView
+
+                android:layout_marginLeft="10dp"
+                android:text="数量"
+                android:textSize="15sp"
+                android:textColor="@color/color_333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <com.huafeng.client.view.CursorEditText
+            android:id="@+id/et_input"
+            android:inputType="phone"
+            android:layout_marginLeft="30dp"
+            android:layout_centerVertical="true"
+            android:gravity="end|center_vertical"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/color_999"
+            android:textColorHint="#ccc"
+            android:textSize="14sp"
+            android:background="@null"
+            android:hint="请输入使用数量"
+            android:layout_width="200dp"
+            android:layout_height="35dp" />
+
+    </RelativeLayout>
+    <View
+
+        android:background="#f3f3f3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+</LinearLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/back"
+            android:padding="15dp"
+            android:src="@mipmap/back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textSize="18sp"
+            android:text="手机换绑"
+            android:layout_centerInParent="true"
+            android:textColor="#333333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:paddingTop="30dp"
+
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_phone"
+                android:textSize="14sp"
+                android:textColor="@color/color_333"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_send1"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:textSize="14sp"
+                android:textColor="#2D5FE1"
+                android:text="获取验证码"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#DFE1E6"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"></View>
+        <RelativeLayout
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/et_code1"
+                android:inputType="number"
+                android:textColor="@color/color_333"
+                android:textColorHint="#ccc"
+                android:textSize="14sp"
+                android:background="@color/white"
+                android:hint="请输入旧手机号获取的验证码"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+        </RelativeLayout>
+        <View
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#DFE1E6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></View>
+        <RelativeLayout
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/et_phone"
+                android:inputType="phone"
+                android:textColorHint="#ccc"
+                android:layout_toLeftOf="@id/tv_send2"
+                android:textSize="14sp"
+                android:textColor="@color/color_333"
+                android:background="@color/white"
+                android:hint="请输入新手机号"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/tv_send2"
+                android:layout_alignParentRight="true"
+                android:textSize="14sp"
+                android:textColor="#2D5FE1"
+                android:text="获取验证码"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#DFE1E6"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"></View>
+        <RelativeLayout
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/et_code2"
+                android:inputType="number"
+                android:textColor="@color/color_333"
+                android:textColorHint="#ccc"
+                android:textSize="14sp"
+                android:background="@color/white"
+                android:hint="请输入新手机号获取的验证码"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+        </RelativeLayout>
+        <View
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#DFE1E6"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"></View>
+        <TextView
+            android:id="@+id/tv_submit"
+            android:gravity="center"
+            android:background="@drawable/bg_per_login"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center_horizontal"
+            android:text="确认换绑"
+            android:layout_width="120dp"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+</LinearLayout>

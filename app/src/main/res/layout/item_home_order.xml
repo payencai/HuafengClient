@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:padding="10dp"
+    android:background="@drawable/bg_white_login"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <TextView
+           android:id="@+id/tv_ordernumber"
+
+           android:textSize="16sp"
+           android:textColor="#666"
+           android:text="21023012331231"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+       <TextView
+           android:id="@+id/tv_status"
+           android:layout_alignParentRight="true"
+           android:textSize="14sp"
+           android:textColor="#2D5FE1"
+           android:text="待工厂接单"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+   </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:background="@drawable/drawable_image_bg_0dp"
+            android:id="@+id/iv_img"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/image_load_err"
+            android:layout_width="65dp"
+            android:layout_height="65dp" />
+        <LinearLayout
+
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textSize="14sp"
+                android:textColor="@color/color_333"
+                android:id="@+id/tv_name"
+                android:text="0012#"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textSize="10sp"
+                android:textColor="@color/color_333"
+                android:id="@+id/tv_num"
+                android:text="计划数量：100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_marginTop="5dp"
+                android:textSize="10sp"
+                android:textColor="@color/color_333"
+                android:text="客户：王总  广东广州"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
